@@ -78,6 +78,10 @@ sup, .sup {
   border-radius: 500px;
 }
 
+.sticky-profile.sticky-top {
+  top: 85px;
+}
+
 header.p-section {
   padding: 160px 0px 120px;
 }
