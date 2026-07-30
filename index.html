@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nolan Pozzobon : University of Chicago Wrestling, Computer Science, and Linguistics Alumni</title>
+  <title>Nolan Pozzobon, Computer Science and Linguistics at UChicago and Carnegie Mellon</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -81,7 +81,8 @@
 
           <img src="img/github-activity.png" alt="GitHub activity chart" class="mb-3">
 
-          <p class='lead'>I am a fourth year at the University of Chicago earning a bachelor's in computer science and linguistics. I'm looking for opportunities to work and connect with those in the AI space. Particularly, Agentic AI, NLP, AI Powered Search/Recommendation, and all applications of these.</p>
+          <p class='lead'>I'm a computer science and linguistics graduate of the University of Chicago and an MSAII student at Carnegie Mellon's Language Technologies Institute. My work spans LLM interpretability, agentic systems, NLP, and search and recommendation. I'm most interested in where language, meaning, and models meet. I also think a lot about how we can build long-term goals into AI and recommendation systems.</p>
+          <p class='lead'>I'm open to research and AI/ML engineering intern roles starting summer 2027.</p>
           <p class='lead'>On a personal level, I enjoy learning languages, reading, playing music, wrestling, and cooking. Check out my Goodreads or give my band (from years ago) a listen!</p>
 
           <div class='mt-5'>
@@ -102,23 +103,22 @@
       <blockquote>About Projects</blockquote>
       <img src="img/github-activity.png" alt="GitHub activity chart" class="mb-3">
 
-      <p class='lead'>Most of my projects are geared towards working with LLMs in interpretability and LLM applications.</p>
-      <p class='lead'>Currently, I am a visiting student researcher at the <a href="https://slattic.ttic.edu/people" class="text-dark" target="_blank" rel="noopener noreferrer">Speech and Language group at TTIC</a> working with <a href="https://www.ttic.edu/faculty/sun/" class="text-dark" target="_blank" rel="noopener noreferrer">Dr. Zhewei Sun</a> and as a Research Assistant at <a href="https://knowledgelab.org" class="text-dark" target="_blank" rel="noopener noreferrer">Knowledge Lab</a> with Austin Kozlowski. The description of our research can be found below.</p>
+      <p class='lead'>Most of my projects work with LLMs in interpretability and LLM applications.</p>
+      <p class='lead'>Most recently I was an AI Fellow at Opteryx. Before that I was a research assistant with <a href="https://www.ttic.edu/faculty/sun/" class="text-dark" target="_blank" rel="noopener noreferrer">Dr. Zhewei Sun</a> at the <a href="https://slattic.ttic.edu/people" class="text-dark" target="_blank" rel="noopener noreferrer">Speech and Language group at TTIC</a>. Descriptions of these and other projects are below.</p>
       
       <h2 class='mb-5 underline mt-5'>Current and Past Projects</h2>
 
       <div class='row g-4'>
-        
+
         <div class='col-md-6 col-lg-4'>
           <div class='card h-100 border-0 shadow-sm p-3'>
             <div class='card-body'>
-              <blockquote class='quotation'>Knowledge Lab: AutoInterp</blockquote>
-              <p class='lead'>As a Research Assistant, I optimize Codex-based report generation and analysis for AutoInterp, an autonomous mechanistic interpretability research agentic system.</p>
-              <p class='lead'>I also designed an agentic data analysis pipeline for non-technical domains where users can input datasets and query them, producing grounded and reproducible reports.</p>
+              <blockquote class='quotation'>Opteryx</blockquote>
+              <p class='lead'>As an AI Fellow at Opteryx, I shipped a humanization feature into a production LLM pipeline that generates regulated pharmaceutical stability reports for paying enterprise customers.</p>
+              <p class='lead'>I built a feature extraction system across five heterogeneous document corpora to model the stylistic and structural patterns of human-authored reports, which lifted reviewer acceptance by 40%. I also designed an evaluation pipeline that scores generated reports on factual correctness, logical consistency, register, and how well they reflect customer goals. This replaced a slow manual review process.</p>
             </div>
             <div class='card-footer bg-white border-0'>
-              <a href="https://github.com/akozlo/AutoInterp" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Code</a>
-              <a href="https://knowledgelab.org" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark"><i class="bi-link-45deg"></i> Knowledge Lab</a>
+              <a href="mailto:nolanpozzobon@uchicago.edu?subject=Opteryx%20Work%20-%20Discussion" class="btn btn-sm btn-outline-dark"><i class="bi-envelope"></i> Reach out to discuss</a>
             </div>
           </div>
         </div>
@@ -126,12 +126,14 @@
         <div class='col-md-6 col-lg-4'>
           <div class='card h-100 border-0 shadow-sm p-3'>
             <div class='card-body'>
-              <blockquote class='quotation'>Research with Dr. Zhewei Sun (TTIC)</blockquote>
-              <p class='lead'>My current research focuses on developing NLP techniques to better process and model informal language across languages.</p>
-              <p class='lead'>We collected novel datasets for fine-tuning models using BeautifulSoup to more accurately model slang cross-linguistically. We also expanded and modified LLM architectures with PyTorch on distributed GPUs to expand previous research on embedding slang terms.</p>
+              <blockquote class='quotation'>Isolated Knowledge Updates in LLMs</blockquote>
+              <p class='lead'>Quantified the limits of localized model editing using arithmetic contrapositives on the Qwen2.5-1.5B model.</p>
+              <p class='lead'>Implemented dynamic control over the edit-preservation tradeoff using an inference-time "alpha sweep" on LORA task vectors, accomplishing 100% edit efficacy. Successfully isolated targeted factual updates using a 50-item multi-domain locality set.</p>
+              <p class='small text-muted'><em>*Note: The associated repository is currently private.</em></p>
             </div>
             <div class='card-footer bg-white border-0'>
-              <a href="https://github.com/Sun-NLP/Multilingual-Slang" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Code</a>
+              <a href="https://github.com/zchristian04/nlp_final_project_zofie_nolan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Request Access</a>
+              <a href="mailto:nolanpozzobon@uchicago.edu?subject=Isolated%20Knowledge%20Updates%20in%20LLMs%20-%20Discussion" class="btn btn-sm btn-outline-dark"><i class="bi-envelope"></i> Reach out to discuss</a>
             </div>
           </div>
         </div>
@@ -153,14 +155,12 @@
         <div class='col-md-6 col-lg-4'>
           <div class='card h-100 border-0 shadow-sm p-3'>
             <div class='card-body'>
-              <blockquote class='quotation'>Isolated Knowledge Updates in LLMs</blockquote>
-              <p class='lead'>Quantified the limits of localized model editing using arithmetic contrapositives on the Qwen2.5-1.5B model.</p>
-              <p class='lead'>Implemented dynamic control over the edit-preservation tradeoff using an inference-time "alpha sweep" on LORA task vectors, accomplishing 100% edit efficacy. Successfully isolated targeted factual updates using a 50-item multi-domain locality set.</p>
-              <p class='small text-muted'><em>*Note: The associated repository is currently private.</em></p>
+              <blockquote class='quotation'>Research with Dr. Zhewei Sun (TTIC)</blockquote>
+              <p class='lead'>This research developed NLP techniques to better process and model informal language across languages.</p>
+              <p class='lead'>We collected novel datasets for fine-tuning models using BeautifulSoup to more accurately model slang cross-linguistically. We also expanded and modified LLM architectures with PyTorch on distributed GPUs to build on previous research on embedding slang terms.</p>
             </div>
             <div class='card-footer bg-white border-0'>
-              <a href="https://github.com/zchristian04/nlp_final_project_zofie_nolan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Request Access</a>
-              <a href="mailto:nolanpozzobon@uchicago.edu?subject=Isolated%20Knowledge%20Updates%20in%20LLMs%20-%20Discussion" class="btn btn-sm btn-outline-dark"><i class="bi-envelope"></i> Reach out to discuss</a>
+              <a href="https://github.com/Sun-NLP/Multilingual-Slang" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Code</a>
             </div>
           </div>
         </div>
