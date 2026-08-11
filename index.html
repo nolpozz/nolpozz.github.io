@@ -127,11 +127,13 @@
           <div class='card h-100 border-0 shadow-sm p-3'>
             <div class='card-body'>
               <blockquote class='quotation'>Isolated Knowledge Updates in LLMs</blockquote>
-              <p class='lead'>Quantified the limits of localized model editing using arithmetic contrapositives on the Qwen2.5-1.5B model.</p>
-              <p class='lead'>Implemented dynamic control over the edit-preservation tradeoff using an inference-time "alpha sweep" on LORA task vectors, accomplishing 100% edit efficacy. Successfully isolated targeted factual updates using a 50-item multi-domain locality set.</p>
+              <p class='small text-muted mb-3'><em>Course project, University of Chicago</em></p>
+              <p class='lead'>Quantified the limits of localized model editing using counterfactual arithmetic edits on Qwen2.5-1.5B. A sweep of 13 standard editing configurations showed that every method which successfully injects a false belief collapses neighbor arithmetic accuracy from 90% to under 20%.</p>
+              <p class='lead'>We compared three preservation mechanisms (KL regularization over a 50-item multi-domain locality set, explicit neighbor replay, and a frozen-backbone correction head) across arithmetic, geography, and CounterFact edits. An inference-time "alpha sweep" over the LoRA task vector gives continuous post-hoc control of the edit-preservation tradeoff.</p>
               <p class='small text-muted'><em>*Note: The associated repository is currently private.</em></p>
             </div>
             <div class='card-footer bg-white border-0'>
+              <a href="assets/nlp_final_paper.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark"><i class="bi-file-earmark-pdf"></i> Paper</a>
               <a href="https://github.com/zchristian04/nlp_final_project_zofie_nolan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Request Access</a>
               <a href="mailto:nolanpozzobon@uchicago.edu?subject=Isolated%20Knowledge%20Updates%20in%20LLMs%20-%20Discussion" class="btn btn-sm btn-outline-dark"><i class="bi-envelope"></i> Reach out to discuss</a>
             </div>
