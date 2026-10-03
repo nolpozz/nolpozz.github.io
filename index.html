@@ -4,215 +4,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nolan Pozzobon, Computer Science and Linguistics at UChicago and Carnegie Mellon</title>
+  <meta name="description" content="Nolan Pozzobon — CS & linguistics graduate of UChicago, MSAII student at Carnegie Mellon LTI. Projects in LLM interpretability, agentic systems, and NLP.">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <meta property="og:title" content="Nolan Pozzobon">
+  <meta property="og:description" content="Where language, meaning, and models meet. Projects in LLM interpretability, agentic systems, and NLP.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/PicOfMe.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link href="style.css" rel="stylesheet">
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><i class="bi-lightning-charge"></i> Nolan Pozzobon</a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <svg class="paper-texture" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <filter id="paper-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.003 0.11" numOctaves="2" seed="7" result="noiseH"></feTurbulence>
+      <feColorMatrix in="noiseH" type="matrix"
+        values="0 0 0 0 0.54
+                0 0 0 0 0.44
+                0 0 0 0 0.3
+                0 0 0 0.35 0" result="tintH"></feColorMatrix>
+      <feTurbulence type="fractalNoise" baseFrequency="0.11 0.003" numOctaves="2" seed="14" result="noiseV"></feTurbulence>
+      <feColorMatrix in="noiseV" type="matrix"
+        values="0 0 0 0 0.54
+                0 0 0 0 0.44
+                0 0 0 0 0.3
+                0 0 0 0.18 0" result="tintV"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="tintH"></feMergeNode>
+        <feMergeNode in="tintV"></feMergeNode>
+      </feMerge>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#paper-grain)"></rect>
+  </svg>
 
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on Linkedin</a>
-      </div>
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <span class="monogram">NP</span>
+        Nolan Pozzobon
+      </a>
+      <ul class="nav-links">
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">R&eacute;sum&eacute;</a></li>
+      </ul>
     </div>
   </nav>
 
-  <header class='text-center p-section'>
-    <div class='container-fluid'>
-      <div class='row'>
-        <div class='col-md-6 offset-md-3'>
-          <sup>Nolan Pozzobon</sup>
-          <h1>Student, Programmer, Wrestler, Musician</h1>
-
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on Linkedin</a>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="hand-note">hello, I&rsquo;m &mdash;</span>
+        <h1>Nolan Pozzobon</h1>
+        <p class="subtitle">Where language, meaning, and
+          <span class="underline-accent">models
+            <svg viewBox="0 0 140 20" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M2 12 C 20 4, 35 18, 55 10 S 90 2, 110 12 S 130 16, 138 8" fill="none" stroke="#8A3B1F" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span> meet.</p>
+        <p class="intro">I&rsquo;m a computer science and linguistics graduate of the University of Chicago and an MSAII student at Carnegie Mellon&rsquo;s Language Technologies Institute. My work spans LLM interpretability, agentic systems, NLP, and search and recommendation.</p>
+        <div class="btn-row">
+          <a href="#portfolio" class="btn btn-fill">See the projects</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">R&eacute;sum&eacute;</a>
+          <a href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" target="_blank" rel="noopener noreferrer" class="btn btn-outline alt">LinkedIn</a>
         </div>
+      </div>
+
+      <div class="shelf-wrap">
+        <span class="hand-note shelf-note">the shelf &darr;</span>
+        <div class="bookshelf">
+          <a href="#opteryx" class="spine spine-1">Opteryx</a>
+          <a href="#knowledge-edits" class="spine spine-2 banded">Knowledge Edits</a>
+          <a href="#prepost" class="spine spine-3">Prepost AI</a>
+          <a href="#slang" class="spine spine-4 banded">Multilingual Slang</a>
+          <a href="#nabu" class="spine spine-5">Nabu</a>
+          <div class="flat-books">
+            <a href="https://www.goodreads.com/user/show/184269520-nolan-pozzobon" target="_blank" rel="noopener noreferrer" class="flat-book goodreads">Goodreads</a>
+            <a href="https://open.spotify.com/artist/2NUjJL9vf9BGrfQE3Vzkh0" target="_blank" rel="noopener noreferrer" class="flat-book spotify">Spotify</a>
+          </div>
+        </div>
+        <div class="shelf-plank"></div>
       </div>
     </div>
   </header>
 
-  <section id='about' class='p-section'>
-    <div class='container container-lg'>
-      <sup>About</sup>
-      <h2 class='mb-5 underline'>I am Nolan Pozzobon</h2>
+  <hr class="rule">
 
-      <div class='row flex-row'>
-        <div class='col-sm-4'>
-          <div class="p-3 sticky-top sticky-profile">
-            <img src="img/PicOfMe.jpg" alt="Photo of Nolan Pozzobon" class="circle mb-3">
+  <section id="about" class="section">
+    <div class="wrap about-grid">
+      <figure class="polaroid">
+        <div class="tape"></div>
+        <img src="img/PicOfMe.jpg" alt="Photo of Nolan Pozzobon">
+        <figcaption>Nolan</figcaption>
+      </figure>
 
-            <ul class='list-inline mb-0 text-center'>
-              <li class='list-inline-item h4 mb-0 me-3'>
-                <a href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" target="_blank" rel="noopener noreferrer" class="text-dark" aria-label="LinkedIn">
-                  <i class="bi-linkedin"></i>
-                </a>
-              </li>
-              <li class='list-inline-item h4 mb-0 me-3'>
-                <a href="https://github.com/nolpozz" target="_blank" rel="noopener noreferrer" class="text-dark" aria-label="GitHub">
-                  <i class="bi-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class='col-sm-8'>
-          <blockquote>About Me</blockquote>
-
-          <img src="img/github-activity.png" alt="GitHub activity chart" class="mb-3">
-
-          <p class='lead'>I'm a computer science and linguistics graduate of the University of Chicago and an MSAII student at Carnegie Mellon's Language Technologies Institute. My work spans LLM interpretability, agentic systems, NLP, and search and recommendation. I'm most interested in where language, meaning, and models meet. I also think a lot about how we can build long-term goals into AI and recommendation systems.</p>
-          <p class='lead'>I'm open to research and AI/ML engineering intern roles starting summer 2027.</p>
-          <p class='lead'>On a personal level, I enjoy learning languages, reading, playing music, wrestling, and cooking. Check out my Goodreads or give my band (from years ago) a listen!</p>
-
-          <div class='mt-5'>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on Linkedin</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/184269520-nolan-pozzobon" class="btn btn-primary"><i class="bi-book-fill"></i> Follow my GoodReads</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/artist/2NUjJL9vf9BGrfQE3Vzkh0" class="btn btn-primary"><i class="bi-music-note"></i> Listen on Spotify</a>
-            <a href="assets/resume.pdf" class="btn btn-primary"><i class="bi-download"></i> View Resume</a>
-            <a href="mailto:nolanpozzobon@uchicago.edu" class="btn btn-primary"><i class="bi-envelope"></i> Send Email</a>
-          </div>
-        </div>
+      <div class="about-body">
+        <span class="section-label">&sect; About / A little about me</span>
+        <h2>I am Nolan Pozzobon</h2>
+        <p>I&rsquo;m a computer science and linguistics graduate of the University of Chicago and an MSAII student at Carnegie Mellon&rsquo;s Language Technologies Institute. My work spans LLM interpretability, agentic systems, NLP, and search and recommendation. I&rsquo;m most interested in where language, meaning, and models meet. I also think a lot about how we can build long-term goals into AI and recommendation systems.</p>
+        <p>On a personal level, I enjoy learning languages, reading, playing music, wrestling, and cooking. Check out my Goodreads or give my band (from years ago) a listen!</p>
+        <p class="hand-note margin-note">&rarr; open to research &amp; AI/ML engineering internships, summer 2027</p>
       </div>
     </div>
   </section>
 
-  <section id='portfolio' class='p-section bg-light'>
-    <div class='container'>
-      <sup>Portfolio</sup>
-      <blockquote>About Projects</blockquote>
-      <img src="img/github-activity.png" alt="GitHub activity chart" class="mb-3">
+  <hr class="rule">
 
-      <p class='lead'>Most of my projects work with LLMs in interpretability and LLM applications.</p>
-      <p class='lead'>Most recently I was an AI Fellow at Opteryx. Before that I was a research assistant with <a href="https://www.ttic.edu/faculty/sun/" class="text-dark" target="_blank" rel="noopener noreferrer">Dr. Zhewei Sun</a> at the <a href="https://slattic.ttic.edu/people" class="text-dark" target="_blank" rel="noopener noreferrer">Speech and Language group at TTIC</a>. Descriptions of these and other projects are below.</p>
-      
-      <h2 class='mb-5 underline mt-5'>Current and Past Projects</h2>
+  <section id="portfolio" class="section">
+    <div class="wrap">
+      <span class="section-label">&sect; Card catalog &mdash; 5 entries / Projects</span>
+      <h2 style="margin-bottom: 1.5rem;">Projects</h2>
+      <p class="section-intro">Most of my projects work with LLMs in interpretability and LLM applications. Most recently I was an AI Fellow at Opteryx. Before that I was a research assistant with <a href="https://www.ttic.edu/faculty/sun/" target="_blank" rel="noopener noreferrer" style="color: var(--link-on-card);">Dr. Zhewei Sun</a> at the <a href="https://slattic.ttic.edu/people" target="_blank" rel="noopener noreferrer" style="color: var(--link-on-card);">Speech and Language group at TTIC</a>.</p>
 
-      <div class='row g-4'>
+      <div class="catalog-grid">
 
-        <div class='col-md-6 col-lg-4'>
-          <div class='card h-100 border-0 shadow-sm p-3'>
-            <div class='card-body'>
-              <blockquote class='quotation'>Opteryx</blockquote>
-              <p class='lead'>As an AI Fellow at Opteryx, I shipped a humanization feature into a production LLM pipeline that generates regulated pharmaceutical stability reports for paying enterprise customers.</p>
-              <p class='lead'>I built a feature extraction system across five heterogeneous document corpora to model the stylistic and structural patterns of human-authored reports, which lifted reviewer acceptance by 40%. I also designed an evaluation pipeline that scores generated reports on factual correctness, logical consistency, register, and how well they reflect customer goals. This replaced a slow manual review process.</p>
-            </div>
-            <div class='card-footer bg-white border-0'>
-              <a href="mailto:nolanpozzobon@uchicago.edu?subject=Opteryx%20Work%20-%20Discussion" class="btn btn-sm btn-outline-dark"><i class="bi-envelope"></i> Reach out to discuss</a>
-            </div>
+        <article class="catalog-card" id="opteryx">
+          <div class="card-header-row"><span class="card-no">No. 01</span><span>Industry</span></div>
+          <h3>Opteryx</h3>
+          <span class="card-subtitle">AI Fellow</span>
+          <p class="desc">Shipped a humanization feature into a production LLM pipeline generating regulated pharmaceutical stability reports, lifting reviewer acceptance by 40%.</p>
+          <details>
+            <summary>More</summary>
+            <p>As an AI Fellow at Opteryx, I shipped a humanization feature into a production LLM pipeline that generates regulated pharmaceutical stability reports for paying enterprise customers.</p>
+            <p>I built a feature extraction system across five heterogeneous document corpora to model the stylistic and structural patterns of human-authored reports, which lifted reviewer acceptance by 40%. I also designed an evaluation pipeline that scores generated reports on factual correctness, logical consistency, register, and how well they reflect customer goals. This replaced a slow manual review process.</p>
+          </details>
+          <div class="card-links">
+            <a href="mailto:nolanpozzobon@uchicago.edu?subject=Opteryx%20Work%20-%20Discussion">Reach out</a>
           </div>
-        </div>
+          <span class="punch-hole" aria-hidden="true"></span>
+        </article>
 
-        <div class='col-md-6 col-lg-4'>
-          <div class='card h-100 border-0 shadow-sm p-3'>
-            <div class='card-body'>
-              <blockquote class='quotation'>Isolated Knowledge Updates in LLMs</blockquote>
-              <p class='small text-muted mb-3'><em>Course project, University of Chicago</em></p>
-              <p class='lead'>Quantified the limits of localized model editing using counterfactual arithmetic edits on Qwen2.5-1.5B. A sweep of 13 standard editing configurations showed that every method which successfully injects a false belief collapses neighbor arithmetic accuracy from 90% to under 20%.</p>
-              <p class='lead'>We compared three preservation mechanisms (KL regularization over a 50-item multi-domain locality set, explicit neighbor replay, and a frozen-backbone correction head) across arithmetic, geography, and CounterFact edits. An inference-time "alpha sweep" over the LoRA task vector gives continuous post-hoc control of the edit-preservation tradeoff.</p>
-              <p class='small text-muted'><em>*Note: The associated repository is currently private.</em></p>
-            </div>
-            <div class='card-footer bg-white border-0'>
-              <a href="assets/nlp_final_paper.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark"><i class="bi-file-earmark-pdf"></i> Paper</a>
-              <a href="https://github.com/zchristian04/nlp_final_project_zofie_nolan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Request Access</a>
-              <a href="mailto:nolanpozzobon@uchicago.edu?subject=Isolated%20Knowledge%20Updates%20in%20LLMs%20-%20Discussion" class="btn btn-sm btn-outline-dark"><i class="bi-envelope"></i> Reach out to discuss</a>
-            </div>
+        <article class="catalog-card" id="knowledge-edits">
+          <div class="card-header-row"><span class="card-no">No. 02</span><span>Interpretability</span></div>
+          <h3>Isolated Knowledge Updates in LLMs</h3>
+          <span class="card-subtitle">Course project, University of Chicago</span>
+          <p class="desc">Quantified the limits of localized model editing with counterfactual arithmetic edits on Qwen2.5-1.5B &mdash; every method that injects a false belief collapses neighbor accuracy from 90% to under 20%.</p>
+          <details>
+            <summary>More</summary>
+            <p>Quantified the limits of localized model editing using counterfactual arithmetic edits on Qwen2.5-1.5B. A sweep of 13 standard editing configurations showed that every method which successfully injects a false belief collapses neighbor arithmetic accuracy from 90% to under 20%.</p>
+            <p>We compared three preservation mechanisms (KL regularization over a 50-item multi-domain locality set, explicit neighbor replay, and a frozen-backbone correction head) across arithmetic, geography, and CounterFact edits. An inference-time &ldquo;alpha sweep&rdquo; over the LoRA task vector gives continuous post-hoc control of the edit-preservation tradeoff.</p>
+          </details>
+          <p class="card-note">*Note: the associated repository is currently private.</p>
+          <div class="card-links">
+            <a href="assets/knowledge_edits.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a href="https://github.com/zchristian04/nlp_final_project_zofie_nolan" target="_blank" rel="noopener noreferrer">Code (request access)</a>
           </div>
-        </div>
+          <span class="punch-hole" aria-hidden="true"></span>
+        </article>
 
-        <div class='col-md-6 col-lg-4'>
-          <div class='card h-100 border-0 shadow-sm p-3'>
-            <div class='card-body'>
-              <blockquote class='quotation'>Prepost AI / Epistemic Hygienist</blockquote>
-              <p class='lead'>Engineered a multi-agent system using an AI architecture that integrates NLI nodes and RAG retrieval to mitigate "bullshit" assertions and promote nuanced social media speech.</p>
-              <p class='lead'>The system gathers external context from sources like Wikipedia and BBC to perform structured reasoning. I validated performance across diverse agentic designs using models like Gemma 3, Llama 3.1, and GPT-OSS.</p>
-            </div>
-            <div class='card-footer bg-white border-0'>
-              <a href="https://github.com/nolpozz/PrepostAI" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Code</a>
-              <a href="assets/AI_Agents_Final_Paper.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark"><i class="bi-file-earmark-pdf"></i> Paper</a>
-            </div>
+        <article class="catalog-card" id="prepost">
+          <div class="card-header-row"><span class="card-no">No. 03</span><span>Agents</span></div>
+          <h3>Prepost AI / Epistemic Hygienist</h3>
+          <span class="card-subtitle">Multi-agent system</span>
+          <p class="desc">A multi-agent architecture integrating NLI nodes and RAG retrieval to mitigate &ldquo;bullshit&rdquo; assertions and promote nuanced social media speech.</p>
+          <details>
+            <summary>More</summary>
+            <p>Engineered a multi-agent system using an AI architecture that integrates NLI nodes and RAG retrieval to mitigate &ldquo;bullshit&rdquo; assertions and promote nuanced social media speech.</p>
+            <p>The system gathers external context from sources like Wikipedia and BBC to perform structured reasoning. I validated performance across diverse agentic designs using models like Gemma 3, Llama 3.1, and GPT-OSS.</p>
+          </details>
+          <div class="card-links">
+            <a href="https://github.com/nolpozz/PrepostAI" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="assets/epistemic_hygiene.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
           </div>
-        </div>
+          <span class="punch-hole" aria-hidden="true"></span>
+        </article>
 
-        <div class='col-md-6 col-lg-4'>
-          <div class='card h-100 border-0 shadow-sm p-3'>
-            <div class='card-body'>
-              <blockquote class='quotation'>Research with Dr. Zhewei Sun (TTIC)</blockquote>
-              <p class='lead'>This research developed NLP techniques to better process and model informal language across languages.</p>
-              <p class='lead'>We collected novel datasets for fine-tuning models using BeautifulSoup to more accurately model slang cross-linguistically. We also expanded and modified LLM architectures with PyTorch on distributed GPUs to build on previous research on embedding slang terms.</p>
-            </div>
-            <div class='card-footer bg-white border-0'>
-              <a href="https://github.com/Sun-NLP/Multilingual-Slang" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Code</a>
-            </div>
+        <article class="catalog-card" id="slang">
+          <div class="card-header-row"><span class="card-no">No. 04</span><span>Research</span></div>
+          <h3>Multilingual Slang</h3>
+          <span class="card-subtitle">with Dr. Zhewei Sun, TTIC</span>
+          <p class="desc">Developed NLP techniques to better process and model informal language across languages, collecting novel datasets and extending LLM architectures to embed slang terms.</p>
+          <details>
+            <summary>More</summary>
+            <p>This research developed NLP techniques to better process and model informal language across languages.</p>
+            <p>We collected novel datasets for fine-tuning models using BeautifulSoup to more accurately model slang cross-linguistically. We also expanded and modified LLM architectures with PyTorch on distributed GPUs to build on previous research on embedding slang terms.</p>
+            <p>Research with <a href="https://www.ttic.edu/faculty/sun/" target="_blank" rel="noopener noreferrer" style="color: var(--link-on-card);">Dr. Zhewei Sun</a> at the <a href="https://slattic.ttic.edu/people" target="_blank" rel="noopener noreferrer" style="color: var(--link-on-card);">Speech and Language group at TTIC</a>.</p>
+          </details>
+          <div class="card-links">
+            <a href="https://github.com/Sun-NLP/Multilingual-Slang" target="_blank" rel="noopener noreferrer">Code</a>
           </div>
-        </div>
+          <span class="punch-hole" aria-hidden="true"></span>
+        </article>
 
-        <div class='col-md-6 col-lg-4'>
-          <div class='card h-100 border-0 shadow-sm p-3'>
-            <div class='card-body'>
-              <blockquote class='quotation'>Nabu - Personal AI Language Tutor</blockquote>
-              <p class='lead'>Developed an AI native desktop application for real-time conversations with a personalized AI system to expand vocabulary using spaced repetition.</p>
-              <p class='lead'>Crafted the workflows, prompts, and API endpoints, implementing a host of AI tools and APIs such as LangGraph, Whisper, and ElevenLabs.</p>
-            </div>
-            <div class='card-footer bg-white border-0'>
-              <a href="https://github.com/nolpozz/Nabu" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark"><i class="bi-github"></i> Code</a>
-            </div>
+        <article class="catalog-card" id="nabu">
+          <div class="card-header-row"><span class="card-no">No. 05</span><span>Software</span></div>
+          <h3>Nabu</h3>
+          <span class="card-subtitle">Personal AI language tutor</span>
+          <p class="desc">An AI-native desktop app for real-time conversations with a personalized tutor that expands vocabulary using spaced repetition.</p>
+          <details>
+            <summary>More</summary>
+            <p>Developed an AI native desktop application for real-time conversations with a personalized AI system to expand vocabulary using spaced repetition.</p>
+            <p>Crafted the workflows, prompts, and API endpoints, implementing a host of AI tools and APIs such as LangGraph, Whisper, and ElevenLabs.</p>
+          </details>
+          <div class="card-links">
+            <a href="https://github.com/nolpozz/Nabu" target="_blank" rel="noopener noreferrer">Code</a>
           </div>
-        </div>
+          <span class="punch-hole" aria-hidden="true"></span>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <section id='contact' class='p-section-lg bg-dark text-white'>
-    <div class='container container-lg text-center'>
-      <sup>Contact</sup>
-      <h2 class='mb-5'>Let's Talk</h2>
-      <p class='w-sm ms-auto me-auto lead'>Send an email to nolanpozzobon[at]uchicago.edu or connect on LinkedIn.</p>
-      <div class='mt-5'>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on LinkedIn</a>
-      </div>
+  <section id="contact" class="contact-band">
+    <div class="wrap">
+      <span class="section-label">&sect; Circulation desk</span>
+      <h2>Let&rsquo;s talk</h2>
+      <p class="hand-note">drop a line, anytime</p>
+      <a class="contact-email" href="mailto:nolanpozzobon@uchicago.edu">nolanpozzobon@uchicago.edu</a>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/nolpozz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.goodreads.com/user/show/184269520-nolan-pozzobon" target="_blank" rel="noopener noreferrer">Goodreads</a></li>
+        <li><a href="https://open.spotify.com/artist/2NUjJL9vf9BGrfQE3Vzkh0" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+      </ul>
     </div>
   </section>
 
-  <footer class='bg-black p-5 text-white'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-sm-12 text-center'>
-          <ul class='list-inline mb-0'>
-            <li class='list-inline-item h4 mb-0 me-3'>
-              <a href="https://www.linkedin.com/in/nolan-pozzobon-688a64290/" target="_blank" rel="noopener noreferrer" class="text-light" aria-label="LinkedIn">
-                <i class="bi-linkedin"></i>
-              </a>
-            </li>
-            <li class='list-inline-item h4 mb-0 me-3'>
-              <a href="https://github.com/nolpozz" target="_blank" rel="noopener noreferrer" class="text-light" aria-label="GitHub">
-                <i class="bi-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Nolan Pozzobon</p>
     </div>
   </footer>
 
